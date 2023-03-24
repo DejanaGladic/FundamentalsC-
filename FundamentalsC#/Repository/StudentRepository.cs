@@ -22,6 +22,12 @@ namespace FundamentalsC_.Repository
                 studentFromList.FirstName == firstName && 
                 studentFromList.LastName == lastName).Select(student => student).ToList()[0];
         }
+        public bool IsPresent(string firstName, string lastName)
+        {
+            return _database.students.Any(student =>
+                 student.FirstName == firstName &&
+                 student.LastName == lastName);
+        }
 
     }
 }

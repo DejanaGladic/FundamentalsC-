@@ -17,5 +17,12 @@ namespace FundamentalsC_.Repository
             return _database.subjects.Where(subject =>
                 subject.SubjectName == subjectName).Select(subject => subject).ToList()[0];
         }
+
+        public bool IsPresent(string subjectName)
+        {
+            return _database.subjects.Any(subject =>
+                 subject.SubjectName == subjectName);
+        }
+
     }
 }

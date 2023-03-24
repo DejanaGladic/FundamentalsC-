@@ -10,5 +10,7 @@ namespace FundamentalsC_.Interfaces
 
         Student GetStudentByName(string firstName, string lastName);
 
+        public bool IsPresent(string firstName, string lastName);
+
     }
 }

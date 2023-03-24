@@ -7,5 +7,7 @@ namespace FundamentalsC_.Interfaces
         List<Subject> GetAll();
 
         Subject GetSubjectByName(string subjectName);
+
+        bool IsPresent(string subjectName);
     }
 }
